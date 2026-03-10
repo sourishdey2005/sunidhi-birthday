@@ -7,7 +7,6 @@ import { Stars } from '../3d/Stars';
 export const IntroPage = () => {
   const [step, setStep] = useState(0);
   const setStarted = useStore((state) => state.setStarted);
-  const setMusicPlaying = useStore((state) => state.setMusicPlaying);
 
   useEffect(() => {
     const timers = [
@@ -20,7 +19,6 @@ export const IntroPage = () => {
 
   const handleEnter = () => {
     setStarted(true);
-    setMusicPlaying(true);
   };
 
   return (

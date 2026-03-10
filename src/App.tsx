@@ -14,7 +14,6 @@ import { QuotesSection } from './components/sections/QuotesSection';
 import { StatsSection } from './components/sections/StatsSection';
 import { MakeAWish } from './components/sections/MakeAWish';
 import { StorylineOverlay } from './components/sections/StorylineOverlay';
-import { MusicPlayer } from './components/ui/MusicPlayer';
 import { EasterEggs } from './components/ui/EasterEggs';
 import { Navbar } from './components/ui/Navbar';
 import { CustomCursor, ScrollProgress } from './components/ui/Extras';
@@ -63,7 +62,6 @@ export default function App() {
           <Navbar />
           <ScrollProgress />
           <CustomCursor />
-          <MusicPlayer />
           <EasterEggs />
           
           <div id="hero"><HeroSection /></div>
