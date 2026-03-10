@@ -3,12 +3,10 @@ import { motion, AnimatePresence } from 'motion/react';
 import { X } from 'lucide-react';
 
 const memories = [
-  { id: 1, url: 'https://picsum.photos/seed/sunidhi1/800/1000', caption: 'The laughter that echoed through the night.' },
-  { id: 2, url: 'https://picsum.photos/seed/sunidhi2/800/800', caption: 'A moment frozen in time, forever cherished.' },
-  { id: 3, url: 'https://picsum.photos/seed/sunidhi3/1000/800', caption: 'The quiet beauty of a shared sunset.' },
-  { id: 4, url: 'https://picsum.photos/seed/sunidhi4/800/1200', caption: 'Your joy is the most beautiful thing I know.' },
-  { id: 5, url: 'https://picsum.photos/seed/sunidhi5/1200/800', caption: 'Every adventure is better with you.' },
-  { id: 6, url: 'https://picsum.photos/seed/sunidhi6/800/800', caption: 'The magic of just being together.' },
+  { id: 1, url: 'https://res.cloudinary.com/dodhvvewu/image/upload/v1773166315/abda8022-e66c-4b3d-92f0-d27d64cfd93d_z64bbu.jpg', caption: 'The laughter that echoed through the night.' },
+  { id: 2, url: 'https://res.cloudinary.com/dodhvvewu/image/upload/v1773166316/95018ac2-cc8c-44b9-bade-77e1145f535f_xa6frk.jpg', caption: 'A moment frozen in time, forever cherished.' },
+  { id: 3, url: 'https://res.cloudinary.com/dodhvvewu/image/upload/v1768641283/c4a74d20-b2ff-4a0b-af53-31f82b1347ed_ammjls.jpg', caption: 'The quiet beauty of a shared sunset.' },
+  { id: 4, url: 'https://res.cloudinary.com/dodhvvewu/image/upload/v1768641264/ab2c1580-e265-4cea-af97-733443e03f9d_fqlhs3.jpg', caption: 'Your joy is the most beautiful thing I know.' },
 ];
 
 export const MemoryGallery = () => {
