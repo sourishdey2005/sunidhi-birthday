@@ -29,7 +29,7 @@ export const FinalSection = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ delay: 1, duration: 1 }}
-            className="space-y-4"
+            className="space-y-8"
           >
             <p className="text-rose-400 text-sm uppercase tracking-[0.5em]">Happy Birthday Once Again</p>
             <div className="flex justify-center gap-4">
@@ -43,6 +43,28 @@ export const FinalSection = () => {
                 <Heart fill="#f43f5e" className="text-rose-500" size={32} />
               </motion.div>
             </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 2 }}
+              className="pt-8"
+            >
+              <a 
+                href="https://sunidhi-birthday.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 px-10 py-5 bg-white text-black rounded-full font-bold text-lg hover:bg-rose-500 hover:text-white transition-all duration-500 shadow-xl shadow-white/5"
+              >
+                Visit Your Special Site
+                <motion.span
+                  animate={{ x: [0, 5, 0] }}
+                  transition={{ duration: 1.5, repeat: Infinity }}
+                >
+                  →
+                </motion.span>
+              </a>
+            </motion.div>
           </motion.div>
         </motion.div>
       </div>

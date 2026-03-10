@@ -7,14 +7,13 @@ export const StatsSection = () => {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
-  // Assuming Sunidhi is 22 years old for the sake of this counter
-  // In a real app, we'd use her actual birth date
-  const birthDate = new Date('2004-03-10'); 
+  // The date you met: April 2025
+  const meetingDate = new Date('2025-04-01T00:00:00'); 
 
   useEffect(() => {
     const interval = setInterval(() => {
       const now = new Date();
-      const diff = now.getTime() - birthDate.getTime();
+      const diff = now.getTime() - meetingDate.getTime();
       
       setDays(Math.floor(diff / (1000 * 60 * 60 * 24)));
       setHours(Math.floor((diff / (1000 * 60 * 60)) % 24));
@@ -50,14 +49,14 @@ export const StatsSection = () => {
           className="mb-20"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">The Journey So Far</h2>
-          <p className="text-white/40 text-lg">Every second of your existence has been a gift to the world.</p>
+          <p className="text-white/40 text-lg">Every second of our journey has been a gift to my world.</p>
         </motion.div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-20">
-          <StatBox value={days} label="Days of Magic" />
-          <StatBox value={hours} label="Hours of Joy" />
-          <StatBox value={minutes} label="Minutes of Love" />
-          <StatBox value={seconds} label="Seconds of Light" />
+          <StatBox value={days} label="Days Together" />
+          <StatBox value={hours} label="Hours of Us" />
+          <StatBox value={minutes} label="Minutes of Magic" />
+          <StatBox value={seconds} label="Seconds of Love" />
         </div>
         
         <motion.div

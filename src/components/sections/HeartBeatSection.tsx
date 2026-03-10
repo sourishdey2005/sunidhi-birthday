@@ -41,7 +41,8 @@ const PulsingHeart = ({ speed, onPointerDown }: { speed: number, onPointerDown: 
       ref={mesh} 
       rotation={[Math.PI, 0, 0]} 
       onPointerDown={onPointerDown}
-      style={{ cursor: 'pointer' }}
+      onPointerOver={() => (document.body.style.cursor = 'pointer')}
+      onPointerOut={() => (document.body.style.cursor = 'auto')}
     >
       <extrudeGeometry args={[heartShape, extrudeSettings]} />
       <MeshDistortMaterial
